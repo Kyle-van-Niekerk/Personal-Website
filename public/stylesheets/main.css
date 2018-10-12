@@ -26,15 +26,19 @@ i{
     width:100%;
 }
 
-.body_3{
-    height: 100%;
-    width:100%;
-}
-
 #portfolio{
     padding-top: 2.5%;
 }
 
+label, input, textarea{
+    display: block;
+    text-align: center;
+}
+
+button {
+    margin:0 auto;
+    display:block;
+}
 
 
 

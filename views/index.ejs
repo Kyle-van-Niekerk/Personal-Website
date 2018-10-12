@@ -13,23 +13,63 @@
     </div>
         
     <div class="row p-3 mb-2 bg-dark text-white">    
-        <div class="text-center col-md-6 body_2">
+        <div class="text-center col-md-6 body_2 my-auto">
             
             <h3 id = "about">About Me</h3>
             <p>I’m a junior Full Stack Web Developer interested in building beautiful, functional and effective websites. I started to learn code in 2018 and after a couple of months I was able to build web applications. During my training I was responsible for building a large-scaled app called YelpCamp, which involved both front-end and back-end technology. I am now currently building experience by working on my personal portfolio.</p>
             <p>The main languages I work with are HTML, CSS and JavaScript, however I am also familiar with other languages and technology. If you are looking for a website or a web application, you can contact me through the information on the right. For a limited time only I am open to building projects pro bono as I am looking to build experience. Have a look at some of my previous work and if you like it, feel free to contact me.</p>
         </div>
     
+      <!-- contact form -->
+      
+      <form id="contact" class="col-md-6 my-auto" action="https://formspree.io/kdmvanniekerk@gmail.com" method="POST">
+            
+            <h3 class = "text-center">Contact</h3>
+          
+            <div class = "form-group">
+            <label>
+              E-mail
+            <div class = "col-auto">
+            <input type = "email" name = "email" class = "email form-control">
+            </div>
+          </label>
+          </div>
+          <div class = "form-group">
+          <label>
+              Subject
+            <div class = "col-auto">  
+              <input type = "text" name = "subject" class = "subject form-control">
+            </div>
+          </label>
+          </div>
+          <div class = "form-group">
+          <label>
+              Message
+              <div class = "col-auto">
+              <textarea name = "message" class = "message form-control"></textarea>
+              </div>
+          </label>
+          </div>
+          <div class = "status">
+          </div>
+          
+          <button type = "submit" class = "submit">Send</button>
+          
+      </form>
+      
+      
+      
+      
       <!-- second nested column -->
-        <div class="text-center col-md-6 body_3">
+        <!--<div class="text-center col-md-6 body_3">-->
         <!-- column content -->
-            <h3 id = "contact">Contact</h3>
-            <p>Email: kdmvanniekerk@yahoo.com</p>
-            <p>Skype Name: kyle22071994</p>
-            <form action="mailto:kdmvanniekerk@yahoo.com" method="post" enctype="text/plain">
-                <button type="submit" class="btn btn-secondary">Send Email</button>
-            </form>
-        </div>
+        <!--    <h3 id = "contact">Contact</h3>-->
+        <!--    <p>Email: kdmvanniekerk@yahoo.com</p>-->
+        <!--    <p>Skype Name: kyle22071994</p>-->
+        <!--    <form action="mailto:kdmvanniekerk@yahoo.com" method="post" enctype="text/plain">-->
+        <!--        <button type="submit" class="btn btn-secondary">Send Email</button>-->
+        <!--    </form>-->
+        <!--</div>-->
     </div>
 
 <% include ./partials/footer %>
