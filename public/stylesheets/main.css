@@ -8,7 +8,7 @@ i{
 }
 
 #arrow{
-    padding-top: 20%;
+    padding-top: 5%;
     padding-bottom:4%;
 
 }
@@ -16,8 +16,9 @@ i{
 
 
 .body_1{
-    height:50%;
-    padding-top: 20%;
+    height:100%;
+    padding-top: 5%;
+    
 }
 
 
@@ -40,6 +41,13 @@ button {
     margin:0 auto;
     display:block;
 }
+
+.avatar {
+    
+     
+    border-radius: 50%;
+}
+
 
 
 
