@@ -1,108 +1,60 @@
 <% include partials/header %>
-    
-         <div class = "row">
-<div class= "col-md-4">
-                
-            </div>
-  <!-- first nested column -->
-        <div class="text-center col-md-4 body_1">
+  
+
+    <div class = "ui grid landing-image padding">
+        <div class = "four wide column"></div>
+        <div class="eight wide column ui center aligned grid ui middle aligned grid">
+            <div class="ui fluid card">
             
-            <img src = "http://res.cloudinary.com/kylesacloud/image/upload/v1539308488/IMG_6587.jpg" alt="Avatar" class="avatar">
-            <h1>KYLE VAN NIEKERK</h1>
-            <h3>~WEB DEVELOPER~</h3>
-            <p>I’m a junior Full Stack Web Developer interested in building beautiful, functional and effective websites. I started to learn code in 2018 and after a couple of months I was able to build web applications. During my training I was responsible for building a large-scaled app called YelpCamp, which involved both front-end and back-end technology. I am now currently building experience by working on my personal portfolio.</p>
-            <a href = "#next" class = "text-secondary"><i id ="arrow" class="fas fa-arrow-circle-down"></i></a>
-            </div>
-           
-            
-            <div class= "col-md-4">
-            
-            
-            </div>
-            
-            
-            
-        </div>
-        
-        <div class = "row" id = "portfolio">
-        <div class = "col-md-12 text-center p-3 mb-2 bg-dark text-white my-auto">
-        <h3>Portfolio</h3>
-        <div class = "row">
-            <div class = "col-md-4">
-                
-            </div>
-            <div class = "col-md-4 my-auto">
-              <div class="thumbnail">
-                <a href="/portfolio#YelpCamp">
-                    <img src="https://res.cloudinary.com/kylesacloud/image/upload/v1538544714/Screen_Shot_2018-10-03_at_1.24.28_PM.png" class = "img-thumbnail" alt="Responsive image" style="width:100%">
-                </a>
-        </div>  
-            </div>
-            
-        </div>
-        
+            <div class="content">
+                    <h1>Kyle van Niekerk</h1>
+                    <h3>Web Developer</h3>
+                    <p>I’m a junior Full Stack Web Developer interested in building beautiful, functional and effective websites. I started to learn code in 2018 and after a couple of months I was able to build web applications. During my training I was responsible for building a large-scaled app called YelpCamp, which involved both front-end and back-end technology. I am now currently building experience as a freelancer by working on my personal portfolio.</p>
+                    <div class="ui animated secondary button" tabindex="0">
+                        <a href = "/portfolio">
+                        <div class="push visible content">View My Portfolio</div>
+                            <div class="hidden content">
+                                <i class="push right arrow icon"></i>
+                        </div>
+                        </a>
+                    </div>
+            </div>  
         </div>
         </div>
-        
-            
-    
-        
-    <div class="row">    
-        <div class = "col-md-4">
-            
-        </div>
-    
-      <!-- contact form -->
-      <div name = "contact" class = "col-md-4 text-center my-auto">
-      <form action="https://formspree.io/kdmvanniekerk@gmail.com" method="POST">
-            
-            <h3 class = "text-center">Contact</h3>
-          
-            <div class = "form-group">
-            <label>
-              E-mail
-            <div class = "col-auto">
-            <input type = "email" name = "email" class = "email form-control">
-            </div>
-          </label>
-          </div>
-          <div class = "form-group">
-          <label>
-              Subject
-            <div class = "col-auto">  
-              <input type = "text" name = "subject" class = "subject form-control">
-            </div>
-          </label>
-          </div>
-          <div class = "form-group">
-          <label>
-              Message
-              <div class = "col-auto">
-              <textarea name = "message" class = "message form-control"></textarea>
-              </div>
-          </label>
-          </div>
-          <div class = "status">
-          </div>
-          
-          <button type = "submit" class = "submit">Send</button>
-          
-      </form>
-      
-      
-      
-      
-      <!-- second nested column -->
-        <!--<div class="text-center col-md-6 body_3">-->
-        <!-- column content -->
-        <!--    <h3 id = "contact">Contact</h3>-->
-        <!--    <p>Email: kdmvanniekerk@yahoo.com</p>-->
-        <!--    <p>Skype Name: kyle22071994</p>-->
-        <!--    <form action="mailto:kdmvanniekerk@yahoo.com" method="post" enctype="text/plain">-->
-        <!--        <button type="submit" class="btn btn-secondary">Send Email</button>-->
-        <!--    </form>-->
-        <!--</div>-->
     </div>
+
+    <div class = "ui inverted grid contact heading-1">
+        <div class = "sixteen wide column ui center aligned grid ui middle aligned grid">
+            <h3>Contact</h3>
+        </div>
     </div>
+    
+    <div id = "contact" name = "contact" class = "ui grid contact">
+        <div class = "four wide column"></div>
+        <div class = "eight wide column ui center aligned grid ui middle aligned grid">
+            <form action = "https://formspree.io/kdmvanniekerk@yahoo.com" method = "POST" class="ui form padding forem">
+                <div class="field">
+                    <label>First Name</label>
+                    <input type="text" name="first-name" placeholder="First Name">
+                </div>
+                <div class="field">
+                    <label>Last Name</label>
+                    <input type="text" name="last-name" placeholder="Last Name">
+                </div>
+                <div class="field">
+                    <label>Email Address</label>
+                    <input type="email" name="email-address" placeholder="Last Name">
+                </div>
+                <div class="field">
+                    <label>Message</label>
+                    <textarea name = "message"></textarea>
+                </div>
+                <div>
+                <button class="ui secondary button" type="submit">Submit</button>
+                </div>
+                </form>
+        </div>
+    </div>
+
 
 <% include ./partials/footer %>

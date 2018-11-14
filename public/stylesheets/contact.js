@@ -1,7 +1,5 @@
 /*global $*/
 
-console.log("hello world!");
-
 $(document).ready(function () {
     $('.submit').click(function (event){
       
